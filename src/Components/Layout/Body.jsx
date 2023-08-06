@@ -1,5 +1,7 @@
 import React from 'react';
 import { BorderOutlined } from '@ant-design/icons';
+import Project from '../Partials/project';
+import Testimonial from '../Partials/testimonial';
 
 function Body() {
 	return (
@@ -11,12 +13,14 @@ function Body() {
 							<h1>The mad hatter</h1>
 							<h2>UI/UX design - 001</h2>
 						</div>
+
 						<div className='icons'>
 							<BorderOutlined />
 							<BorderOutlined />
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
+
 					<div className='hero-image-con'>
 						<p className='lg-date'>2023</p>
 						<img src="./images/hero-image.jpg" alt="" />
@@ -34,6 +38,7 @@ function Body() {
 							<BorderOutlined />
 							<BorderOutlined />
 						</div>
+
 						<div className='subheading'>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							<br />
@@ -46,6 +51,7 @@ function Body() {
 			<div className='approach-con'>
 				<div className='approach-subcon'>
 					<h2><span className='styled'>Design</span> Approach</h2>
+
 					<div className='contents'>
 						<div className='intentional-content'>
 							<h3><span className='styled'>001</span><br />International research</h3>
@@ -65,11 +71,62 @@ function Body() {
 							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
+
 					<div>
 						<h6>Collaborate. Create. Innovate.</h6>
 						<h6>Collaborate. Create. Innovate.</h6>
 					</div>
 				</div>
+			</div>
+
+			<div className='project-con'>
+				<div className='project-subcon'>
+					<h2><span className='styled'>Our</span> projects</h2>
+					<div className='project-items'>
+						<div className='item-con'>
+							<Project />
+							<Project />
+						</div>
+						<div className='item-con'>
+							<Project />
+							<Project />
+						</div>
+					</div>
+				</div>
+
+
+				<div className='testimonial-subcon'>
+					<h2><span className='styled'>What</span> they say</h2>
+					<div className='testimonial-items'>
+						<div className='item-con'>
+							<Testimonial />
+							<Testimonial />
+							<Testimonial />
+						</div>
+						<div className='item-con'>
+							<Testimonial />
+							<Testimonial />
+							<Testimonial />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="design-con">
+				<div className="design-subcon">
+					<div className="img-con">
+						<img src="./images/hero-image.jpg" alt="" />
+					</div>
+					<div className="text-con">
+						<h2><span className='styled'>Designing for</span><br /> the future</h2>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div className='icons'>
+							<BorderOutlined />
+							<BorderOutlined />
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	)

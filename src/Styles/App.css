@@ -221,7 +221,6 @@ nav {
 }
 
 .page-body .approach-con .intentional-content {
-  background-color: aqua;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -229,11 +228,132 @@ nav {
 }
 
 .page-body .approach-con .digital-content {
-  background-color: red;
   padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.page-body .project-con {
+  background-color: #111111;
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 8% 0;
+}
+
+.page-body .project-con a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.page-body .project-con a:hover {
+  color: yellow;
+}
+
+.page-body .project-con a:active {
+  font-weight: bold;
+}
+
+.page-body .project-con .project-subcon {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-body .project-con .project-subcon .item-con {
+  display: flex;
+  gap: 10%;
+  text-align: left;
+}
+
+.page-body .project-con .project-subcon .item-con .item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  gap: 20px;
+}
+
+.page-body .project-con .testimonial-subcon {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-body .project-con .testimonial-subcon .item-con {
+  display: flex;
+  gap: 5%;
+  text-align: left;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item {
+  background-color: #f1f1f1;
+  color: #111111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  gap: 10px;
+  border-radius: 5%;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item a:hover {
+  color: yellow;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item p:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-body .design-con {
+  background-color: #f1f1f1;
+  color: #111111;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+  gap: 10%;
+}
+
+.page-body .design-con a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.page-body .design-con a:hover {
+  color: yellow;
+}
+
+.page-body .design-con .design-subcon {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+
+.page-body .design-con .design-subcon img {
+  border-radius: 5%;
+}
+
+.page-body .design-con .design-subcon h2 {
+  margin-left: -15%;
 }
 
 .page-footer {
