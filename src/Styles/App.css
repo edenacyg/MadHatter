@@ -42,7 +42,7 @@ nav {
   text-align: justify;
 }
 
-.page-header {
+header {
   background-color: #111111;
   color: #f1f1f1;
   display: flex;
@@ -55,20 +55,20 @@ nav {
   top: 0;
 }
 
-.page-header a {
+header a {
   color: #f1f1f1;
   text-decoration: none;
 }
 
-.page-header a:hover {
+header a:hover {
   color: yellow;
 }
 
-.page-header a:active {
+header a:active {
   font-weight: bold;
 }
 
-.page-header nav {
+header nav {
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -356,20 +356,48 @@ nav {
   margin-left: -15%;
 }
 
-.page-footer {
+footer {
   background-color: #111111;
   color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  width: 100%;
 }
 
-.page-footer a {
+footer a {
   color: #f1f1f1;
   text-decoration: none;
 }
 
-.page-footer a:hover {
+footer a:hover {
   color: yellow;
 }
 
-.page-footer a:active {
+footer a:active {
   font-weight: bold;
+}
+
+footer .footer-con {
+  width: 70%;
+}
+
+footer .categories {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  flex-wrap: wrap;
+}
+
+footer .category h6 {
+  margin-bottom: 1rem;
+}
+
+footer .category a {
+  display: flex;
+}
+
+footer p {
+  margin-top: 2rem;
+  text-align: center;
 }

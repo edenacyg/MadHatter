@@ -40,7 +40,7 @@ nav {
 	text-align: justify;
 }
 
-.page-header {
+header {
 	@include dark;
 	display: flex;
 	justify-content: space-between;
@@ -130,7 +130,7 @@ nav {
 			justify-content: center;
 			gap: 40px;
 		}
-			
+
 		.about-text {
 			display: flex;
 			width: 100%;
@@ -142,7 +142,7 @@ nav {
 				gap: 20px;
 			}
 
-			.subheading{
+			.subheading {
 				width: 80%;
 			}
 		}
@@ -213,7 +213,7 @@ nav {
 				}
 			}
 		}
-		
+
 		.testimonial-subcon {
 			width: 50%;
 			display: flex;
@@ -236,7 +236,7 @@ nav {
 
 					content {
 						display: flex;
-    					justify-content: space-between;
+						justify-content: space-between;
 					}
 
 					p:last-child {
@@ -255,7 +255,7 @@ nav {
 		justify-content: center;
 		padding: 8% 0;
 		gap: 10%;
-		
+
 		.design-subcon {
 			width: 60%;
 			display: flex;
@@ -269,10 +269,40 @@ nav {
 			h2 {
 				margin-left: -15%;
 			}
-		}		
+		}
 	}
 }
 
-.page-footer {
+footer {
 	@include dark;
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+	width: 100%;
+
+	.footer-con {
+		width: 70%;
+	}
+
+	.categories {
+		display: flex;
+		justify-content: space-between;
+		min-width: 100px;
+		flex-wrap: wrap;
+	}
+
+	.category {
+		h6 {
+			margin-bottom: 1rem;
+		}
+
+		a {
+			display: flex;
+		}
+	}
+
+	p {
+		margin-top: 2rem;
+		text-align: center;
+	}
 }

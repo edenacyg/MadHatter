@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className='page-header'>
+        <header>
             <div className='logo-container'>
                 <h6>The mad hatter</h6>
             </div>
@@ -13,7 +13,7 @@ function Header() {
                 <a href="/">Solutions</a>
                 <a href="/">Contact Us</a>
             </nav>
-        </div>
+        </header>
     )
 }
 
