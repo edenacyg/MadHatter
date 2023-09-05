@@ -63,7 +63,7 @@ function Body() {
 						</div>
 
 						<div className='digital-content'>
-							<h3><span className='styled'>002</span><br />Digital solution</h3>
+							<h3><span className='styled'>002</span><br />Digital <br /> solution</h3>
 							<div className='icons'>
 								<BorderOutlined />
 								<BorderOutlined />
@@ -102,12 +102,15 @@ function Body() {
 							<Testimonial />
 							<Testimonial />
 							<Testimonial />
-						</div>
-						<div className='item-con'>
 							<Testimonial />
 							<Testimonial />
 							<Testimonial />
 						</div>
+						{/* <div className='item-con'>
+							<Testimonial />
+							<Testimonial />
+							<Testimonial />
+						</div> */}
 					</div>
 				</div>
 			</div>

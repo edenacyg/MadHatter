@@ -5,7 +5,7 @@ function project() {
     return (
         <div className='item'>
             <img src="./images/hero-image.jpg" alt="" />
-            <h6>Project - 001</h6>
+            <h2>Project - 001</h2>
             <div className='icons'>
                 <BorderOutlined />
                 <BorderOutlined />

@@ -7,25 +7,29 @@
 	h2,
 	h3,
 	h4,
-	h5,
+	h5 {
+		@include heading;
+	}
+
+	h1 {
+		font-size: clamp(2.3rem, 3vw, 10rem);
+	}
+
+	h2 {
+		font-size: clamp(1.2rem, 2.5vw, 6rem);
+		font-weight: 300;
+	}
+
+	h3 {
+		font-size: clamp(1rem, 2vw, 3rem);
+		font-weight: 300;
+	}
+	
 	h6 {
 		@include heading;
-		font-size: clamp(2.3rem, 3vw, 10rem);
-
-		&:nth-child(2) {
-			font-size: clamp(1.2rem, 2.5vw, 6rem);
-			font-weight: lighter; 
-		}
-	
-		&:nth-child(3) {
-		font-size: clamp(1rem, 2vw, 3rem);
-		font-weight: lighter; 
-		}
-	}
-
-	h6 {
 		font-size: 20px;
 	}
+
 	.styled {
 		font-weight: bold;
 	}
@@ -127,7 +131,7 @@ header {
 
 		.about-subcon {
 			@include dark;
-			width: clamp(65%, 20vw, 50%);
+			width: clamp(22rem, 40vw, 45rem);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -164,27 +168,22 @@ header {
 			flex-direction: column;
 			display: flex;
 			align-items: center;
-			gap: 100px;
+			gap: 2rem;
 		}
 
 		.contents {
 			display: flex;
+			flex-wrap: wrap;
+			gap: 2.8rem;
+			margin-bottom: 5rem;
 		}
 
-		.intentional-content {
-			padding: 40px;
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-		}
-
+		.intentional-content,
 		.digital-content {
-			padding: 40px;
+			flex: 1 1 calc(230px - 10px);
 			display: flex;
 			flex-direction: column;
-			gap: 20px;
 		}
-
 	}
 
 	.project-con {
@@ -216,7 +215,7 @@ header {
 
 					img {
 						width: clamp(11rem, 10vw, 25rem);
-					}					
+					}
 				}
 			}
 		}
@@ -231,6 +230,7 @@ header {
 				display: flex;
 				gap: 5%;
 				text-align: left;
+				flex-wrap: wrap;
 
 				.item {
 					@include light;
@@ -240,6 +240,7 @@ header {
 					margin-top: 5%;
 					gap: 10px;
 					border-radius: 5%;
+					flex: 1 1 calc(350px - 100px);
 
 					content {
 						display: flex;
@@ -271,7 +272,8 @@ header {
 
 			img {
 				border-radius: 5%;
-				height: clamp(22rem, 30vw, 50rem);;
+				height: clamp(22rem, 30vw, 50rem);
+				;
 			}
 
 			h2 {
@@ -320,4 +322,3 @@ footer {
 		justify-content: space-between;
 	}
 }
-
