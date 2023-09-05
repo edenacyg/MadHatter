@@ -10,23 +10,22 @@
 	h5,
 	h6 {
 		@include heading;
+		font-size: clamp(2.3rem, 3vw, 10rem);
+
+		&:nth-child(2) {
+			font-size: clamp(1.2rem, 2.5vw, 6rem);
+			font-weight: lighter; 
+		}
+	
+		&:nth-child(3) {
+		font-size: clamp(1rem, 2vw, 3rem);
+		font-weight: lighter; 
+		}
+	}
+
+	h6 {
 		font-size: 20px;
 	}
-
-	h1 {
-		font-size: $large-font;
-	}
-
-	h2 {
-		font-size: $med-font;
-		font-weight: lighter;
-	}
-
-	h3 {
-		font-size: $sm-font;
-		font-weight: lighter;
-	}
-
 	.styled {
 		font-weight: bold;
 	}
@@ -73,7 +72,7 @@ header {
 
 		.hero-subcon {
 			@include light;
-			height: 80vh;
+			height: clamp(42rem, 40vw, 60rem);
 			margin: 3% 10%;
 			border-radius: $lborder-radius;
 			display: flex;
@@ -92,8 +91,12 @@ header {
 				display: flex;
 				align-items: flex-end;
 
+				img {
+					height: clamp(22rem, 30vw, 50rem);
+				}
+
 				.lg-date {
-					font-size: 200px;
+					font-size: clamp(3rem, 16vw, 14rem);
 					font-weight: bold;
 					writing-mode: vertical-rl;
 					transform: rotate(180deg);
@@ -103,7 +106,7 @@ header {
 				}
 
 				.sm-date {
-					font-size: 30px;
+					font-size: clamp(1rem, 0vw, 5rem);
 					font-weight: bold;
 					border: 5px solid $grey-color;
 					border-radius: 20px 0 0 0;
@@ -124,7 +127,7 @@ header {
 
 		.about-subcon {
 			@include dark;
-			width: 30%;
+			width: clamp(65%, 20vw, 50%);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -210,6 +213,10 @@ header {
 					flex-direction: column;
 					margin-top: 10%;
 					gap: 20px;
+
+					img {
+						width: clamp(11rem, 10vw, 25rem);
+					}					
 				}
 			}
 		}
@@ -264,6 +271,7 @@ header {
 
 			img {
 				border-radius: 5%;
+				height: clamp(22rem, 30vw, 50rem);;
 			}
 
 			h2 {
@@ -305,4 +313,11 @@ footer {
 		margin-top: 2rem;
 		text-align: center;
 	}
+
+	.footer-con {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
+
