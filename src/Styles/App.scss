@@ -24,7 +24,7 @@
 		font-size: clamp(1rem, 2vw, 3rem);
 		font-weight: 300;
 	}
-	
+
 	h6 {
 		@include heading;
 		font-size: 20px;
@@ -72,11 +72,10 @@ header {
 		background-size: contain;
 		background-position: bottom;
 		background-repeat: no-repeat;
-		display: flex;
 
 		.hero-subcon {
 			@include light;
-			height: clamp(42rem, 40vw, 60rem);
+			height: clamp(40rem, 45vw, 60rem);
 			margin: 3% 10%;
 			border-radius: $lborder-radius;
 			display: flex;
@@ -88,7 +87,7 @@ header {
 				width: 50%;
 				display: flex;
 				flex-direction: column;
-				gap: 50px;
+				gap: 5vw;
 			}
 
 			.hero-image-con {
@@ -166,7 +165,6 @@ header {
 			width: 50%;
 			display: flex;
 			flex-direction: column;
-			display: flex;
 			align-items: center;
 			gap: 2rem;
 		}
@@ -197,31 +195,35 @@ header {
 		padding: 8% 0;
 
 		.project-subcon {
-			width: 50%;
+			width: clamp(20rem, 60vw, 65rem);
 			display: flex;
 			flex-direction: column;
 			text-align: center;
+			gap: 5vw;
 
 			.item-con {
 				display: flex;
-				gap: 10%;
+				gap: 6vw;
 				text-align: left;
+				flex-wrap: wrap;
 
 				.item {
 					display: flex;
 					flex-direction: column;
-					margin-top: 10%;
 					gap: 20px;
+					flex: 1 1 calc(288px - 10px);
 
 					img {
-						width: clamp(11rem, 10vw, 25rem);
+						width: 100%; 
+						max-width: 100%; 
+						height: auto; 
 					}
 				}
 			}
 		}
 
 		.testimonial-subcon {
-			width: 50%;
+			width: clamp(20rem, 65vw, 65rem);
 			display: flex;
 			flex-direction: column;
 			text-align: center;
@@ -265,7 +267,7 @@ header {
 		gap: 10%;
 
 		.design-subcon {
-			width: 60%;
+			width: clamp(20rem, 65vw, 65rem);
 			display: flex;
 			align-items: center;
 			gap: 6%;
@@ -273,7 +275,6 @@ header {
 			img {
 				border-radius: 5%;
 				height: clamp(22rem, 30vw, 50rem);
-				;
 			}
 
 			h2 {
@@ -299,9 +300,16 @@ footer {
 		justify-content: space-between;
 		min-width: 100px;
 		flex-wrap: wrap;
+		gap: 2%;
 	}
 
 	.category {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 2rem;
+
 		h6 {
 			margin-bottom: 1rem;
 		}
@@ -315,10 +323,41 @@ footer {
 		margin-top: 2rem;
 		text-align: center;
 	}
+}
 
-	.footer-con {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+@media screen and (max-width: 1000px) {
+	.category {
+		flex: 1 1 calc(90% / 2) !important;
 	}
+
+	.item {
+		flex: 1 1 235px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.hero-subcon {
+		flex-wrap: wrap;
+		height: auto !important;
+		padding: 6rem 5rem !important;
+		gap: 2rem;
+
+		.hero-text-con {
+			width: 100% !important;
+		}
+	}
+
+	.item-con {
+		.item {
+			flex: 1 1 100px;
+			align-items: center;
+		}
+	}	
+	
+	.category {
+		flex: 1 1 calc(100%) !important;
+		align-items: center;
+	}
+
+	
 }

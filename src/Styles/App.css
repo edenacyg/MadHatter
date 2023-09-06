@@ -92,13 +92,12 @@ header nav {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  display: flex;
 }
 
 .page-body .hero-container .hero-subcon {
   background-color: #f1f1f1;
   color: #111111;
-  height: clamp(42rem, 40vw, 60rem);
+  height: clamp(40rem, 45vw, 60rem);
   margin: 3% 10%;
   border-radius: 40px;
   display: flex;
@@ -120,7 +119,7 @@ header nav {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 5vw;
 }
 
 .page-body .hero-container .hero-subcon .hero-image-con {
@@ -221,7 +220,6 @@ header nav {
   width: 50%;
   display: flex;
   flex-direction: column;
-  display: flex;
   align-items: center;
   gap: 2rem;
 }
@@ -266,31 +264,35 @@ header nav {
 }
 
 .page-body .project-con .project-subcon {
-  width: 50%;
+  width: clamp(20rem, 60vw, 65rem);
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 5vw;
 }
 
 .page-body .project-con .project-subcon .item-con {
   display: flex;
-  gap: 10%;
+  gap: 6vw;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .page-body .project-con .project-subcon .item-con .item {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
   gap: 20px;
+  flex: 1 1 calc(288px - 10px);
 }
 
 .page-body .project-con .project-subcon .item-con .item img {
-  width: clamp(11rem, 10vw, 25rem);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .page-body .project-con .testimonial-subcon {
-  width: 50%;
+  width: clamp(20rem, 65vw, 65rem);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -354,7 +356,7 @@ header nav {
 }
 
 .page-body .design-con .design-subcon {
-  width: 60%;
+  width: clamp(20rem, 65vw, 65rem);
   display: flex;
   align-items: center;
   gap: 6%;
@@ -400,6 +402,15 @@ footer .categories {
   justify-content: space-between;
   min-width: 100px;
   flex-wrap: wrap;
+  gap: 2%;
+}
+
+footer .category {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 footer .category h6 {
@@ -415,8 +426,31 @@ footer p {
   text-align: center;
 }
 
-footer .footer-con {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media screen and (max-width: 1000px) {
+  .category {
+    flex: 1 1 calc(90% / 2) !important;
+  }
+  .item {
+    flex: 1 1 235px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-subcon {
+    flex-wrap: wrap;
+    height: auto !important;
+    padding: 6rem 5rem !important;
+    gap: 2rem;
+  }
+  .hero-subcon .hero-text-con {
+    width: 100% !important;
+  }
+  .item-con .item {
+    flex: 1 1 100px;
+    align-items: center;
+  }
+  .category {
+    flex: 1 1 calc(100%) !important;
+    align-items: center;
+  }
 }

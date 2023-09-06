@@ -86,8 +86,6 @@ function Body() {
 						<div className='item-con'>
 							<Project />
 							<Project />
-						</div>
-						<div className='item-con'>
 							<Project />
 							<Project />
 						</div>
@@ -106,11 +104,6 @@ function Body() {
 							<Testimonial />
 							<Testimonial />
 						</div>
-						{/* <div className='item-con'>
-							<Testimonial />
-							<Testimonial />
-							<Testimonial />
-						</div> */}
 					</div>
 				</div>
 			</div>
