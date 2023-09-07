@@ -20,7 +20,7 @@
 }
 
 .App h2 {
-  font-size: clamp(1.1rem, 2.6vw, 6rem);
+  font-size: clamp(1.1rem, 2.5vw, 6rem);
   font-weight: 300;
 }
 
@@ -30,12 +30,13 @@
 }
 
 .App h4 {
-  font-size: 60px;
+  font-size: clamp(1.8rem, 3.5vw, 10rem);
   text-transform: initial;
 }
 
 .App h6 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .App .styled {
@@ -251,7 +252,7 @@ header nav {
 }
 
 .page-body .approach-con .approach-subcon {
-  width: 50%;
+  width: clamp(20rem, 60vw, 65rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,13 +267,14 @@ header nav {
 .page-body .approach-con .contents {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.8rem;
+  gap: 3.5rem;
   margin-bottom: 5rem;
+  width: clamp(20rem, 65vw, 40rem);
 }
 
 .page-body .approach-con .contents .intentional-content,
 .page-body .approach-con .contents .digital-content {
-  flex: 1 1 calc(230px - 10px);
+  flex: 1 1 calc(190px - 10px);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -291,7 +293,7 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 12rem;
   padding: 10rem 0;
 }
 
@@ -317,7 +319,7 @@ header nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 5vw;
+  gap: 5rem;
 }
 
 .page-body .project-con .project-subcon .item-con {
@@ -327,10 +329,15 @@ header nav {
   flex-wrap: wrap;
 }
 
+.page-body .project-con .project-subcon .item-con > :nth-child(even) {
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+}
+
 .page-body .project-con .project-subcon .item-con .item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   flex: 1 1 calc(288px - 10px);
 }
 
@@ -338,6 +345,16 @@ header nav {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.page-body .project-con .project-subcon .item-con .item .project-title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.page-body .project-con .project-subcon .item-con .item .project-title .icons {
+  justify-content: flex-end;
 }
 
 .page-body .project-con .testimonial-subcon {
@@ -491,11 +508,22 @@ footer p {
   .category {
     flex: 1 1 calc(90% / 2) !important;
   }
-  .item {
+  .item-con .item {
     flex: 1 1 235px;
   }
   .about-text {
     flex-direction: column;
+  }
+  .project-con {
+    gap: 5rem !important;
+  }
+  .project-con .project-subcon .item-con > :nth-child(even) {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .project-con .project-subcon .item-con .item {
+    margin: 0;
+    margin-bottom: 4rem !important;
   }
 }
 
@@ -509,6 +537,12 @@ footer p {
   }
   .hero-subcon .hero-text-con {
     width: 100% !important;
+  }
+  .approach-con .contents p {
+    margin-top: 0rem !important;
+  }
+  .approach-con h4 {
+    font-size: 1.3rem;
   }
   .item-con .item {
     flex: 1 1 100px;
