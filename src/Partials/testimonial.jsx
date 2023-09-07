@@ -1,5 +1,5 @@
 import React from 'react';
-import { BorderOutlined } from '@ant-design/icons';
+import Circle from '../Components/circle';
 
 function testimonial() {
     return (
@@ -8,8 +8,8 @@ function testimonial() {
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <content>
                 <div className='icons'>
-                    <BorderOutlined />
-                    <BorderOutlined />
+                    <Circle />
+                    <Circle />
                 </div>
                 <div className='texts'>
                     <h6>- Author</h6>

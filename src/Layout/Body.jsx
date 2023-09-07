@@ -1,7 +1,7 @@
 import React from 'react';
-import { BorderOutlined } from '@ant-design/icons';
-import Project from '../Partials/project';
-import Testimonial from '../Partials/testimonial';
+import Project from '.././Partials/project';
+import Testimonial from '.././Partials/testimonial';
+import Circle from '.././Components/circle';
 
 function Body() {
 	return (
@@ -15,15 +15,15 @@ function Body() {
 						</div>
 
 						<div className='icons'>
-							<BorderOutlined />
-							<BorderOutlined />
+							<Circle />
+							<Circle />
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 
 					<div className='hero-image-con'>
 						<p className='lg-date'>2023</p>
-						<img src="./images/hero-image.jpg" alt="" />
+						<img className='hero-image' src="./images/hero-image.png" alt="" />
 						<p className='sm-date'>JUNE 2023</p>
 					</div>
 				</div>
@@ -35,8 +35,8 @@ function Body() {
 					<h2><span className='styled'>About</span><br />the Company</h2>
 					<div className='about-text'>
 						<div className='icons'>
-							<BorderOutlined />
-							<BorderOutlined />
+							<Circle />
+							<Circle />
 						</div>
 
 						<div className='subheading'>
@@ -56,8 +56,8 @@ function Body() {
 						<div className='intentional-content'>
 							<h3><span className='styled'>001</span><br />International research</h3>
 							<div className='icons'>
-								<BorderOutlined />
-								<BorderOutlined />
+								<Circle />
+								<Circle />
 							</div>
 							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
@@ -65,16 +65,16 @@ function Body() {
 						<div className='digital-content'>
 							<h3><span className='styled'>002</span><br />Digital <br /> solution</h3>
 							<div className='icons'>
-								<BorderOutlined />
-								<BorderOutlined />
+								<Circle />
+								<Circle />
 							</div>
 							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
 
 					<div>
-						<h6>Collaborate. Create. Innovate.</h6>
-						<h6>Collaborate. Create. Innovate.</h6>
+						<h4>Collaborate. Create. Innovate.</h4>
+						<h4 className='subtle-heading'>Collaborate. Create. Innovate.</h4>
 					</div>
 				</div>
 			</div>
@@ -117,8 +117,8 @@ function Body() {
 						<h2><span className='styled'>Designing for</span><br /> the future</h2>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<div className='icons'>
-							<BorderOutlined />
-							<BorderOutlined />
+							<Circle />
+							<Circle />
 						</div>
 					</div>
 				</div>

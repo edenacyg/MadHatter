@@ -5,6 +5,7 @@ $font: "Roboto", sans-serif;
 $large-font: 80px;
 $med-font: 60px;
 $sm-font: 45px;
+$xl-font: 60px;
 
 @mixin heading {
     font-weight: 700;
@@ -32,6 +33,10 @@ $accent-color: yellow;
     background-color: $black-color;
     color: $white-color;
 
+    .circle {
+        border: solid 4px $white-color;
+    }
+
     a {
         color: $white-color;
         text-decoration: none;
@@ -50,6 +55,10 @@ $accent-color: yellow;
 @mixin light {
     background-color: $white-color;
     color: $black-color;
+
+    .circle {
+        border: solid 4px $black-color;
+    }
 
     a {
         color: $black-color;

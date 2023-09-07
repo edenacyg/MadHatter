@@ -10,8 +10,8 @@ function Header() {
             <nav>
                 <a className='active' href="/" c>Home</a>
                 <a href="/">About</a>
-                <a href="/">Solutions</a>
-                <a href="/">Contact Us</a>
+                <a href="/">Design</a>
+                <a href="/">Project</a>
             </nav>
         </header>
     )
