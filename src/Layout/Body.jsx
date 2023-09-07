@@ -111,7 +111,7 @@ function Body() {
 			<div className="design-con">
 				<div className="design-subcon">
 					<div className="img-con">
-						<img src="./images/hero-image.jpg" alt="" />
+						<img src="./images/hero-image.png" alt="" />
 					</div>
 					<div className="text-con">
 						<h2><span className='styled'>Designing for</span><br /> the future</h2>

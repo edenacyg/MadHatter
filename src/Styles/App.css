@@ -288,6 +288,9 @@ header nav {
 .page-body .project-con {
   background-color: #111111;
   color: #f1f1f1;
+  background-image: url("../../public/images/bg-shape-03.png");
+  background-size: cover;
+  background-position: center;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -409,6 +412,10 @@ header nav {
 .page-body .design-con {
   background-color: #f1f1f1;
   color: #111111;
+  background-image: url("../../public/images/bg-shape-04.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   justify-content: center;
