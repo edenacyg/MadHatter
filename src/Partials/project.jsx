@@ -1,12 +1,12 @@
 import React from 'react';
-import Circle from '../Components/circle';
+import { Circle, MyImage } from '../Components/mycomponent';
 
-function project() {
+function project({ title, projdate }) {
     return (
         <div className='item'>
-            <img src="./images/hero-image.png" alt="" />
+            <MyImage date={projdate} bg="yes"/>
             <div className="project-title">
-                <h2>Project - 001</h2>
+                <h2>{ title }</h2>
                 <div className='icons'>
                     <Circle />
                     <Circle />

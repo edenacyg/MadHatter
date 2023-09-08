@@ -37,6 +37,7 @@
 .App h6 {
   font-size: 20px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .App .styled {
@@ -68,6 +69,7 @@ header {
   padding: 2% 6% 2% 6%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 header .circle {
@@ -137,48 +139,6 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: 5vw;
-}
-
-.page-body .hero-container .hero-subcon .hero-image-con {
-  display: flex;
-  align-items: flex-end;
-}
-
-.page-body .hero-container .hero-subcon .hero-image-con img {
-  height: clamp(22rem, 30vw, 50rem);
-  animation: float 4s ease-in-out infinite;
-  z-index: 0;
-}
-
-@keyframes float {
-  0%,
-100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.page-body .hero-container .hero-subcon .hero-image-con .lg-date {
-  font-size: clamp(3rem, 16vw, 14rem);
-  font-weight: bold;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  color: #888888;
-  margin: 0 -100px -50px 0;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-.page-body .hero-container .hero-subcon .hero-image-con .sm-date {
-  font-size: clamp(1rem, 0vw, 5rem);
-  font-weight: bold;
-  border: 5px solid #C5C5C5;
-  border-radius: 20px 0 0 0;
-  padding: 20px;
-  margin: 0 0 -30px -60px;
-  z-index: 1;
 }
 
 .page-body .about-con {
@@ -340,7 +300,7 @@ header nav {
 .page-body .project-con .project-subcon .item-con .item {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   flex: 1 1 calc(288px - 10px);
 }
 
@@ -352,8 +312,8 @@ header nav {
 
 .page-body .project-con .project-subcon .item-con .item .project-title {
   display: flex;
-  gap: 2rem;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .page-body .project-con .project-subcon .item-con .item .project-title .icons {
@@ -384,6 +344,7 @@ header nav {
   gap: 10px;
   border-radius: 5%;
   flex: 1 1 calc(350px - 100px);
+  padding-bottom: 4rem;
 }
 
 .page-body .project-con .testimonial-subcon .item-con .item .circle {
@@ -399,14 +360,27 @@ header nav {
   color: yellow;
 }
 
-.page-body .project-con .testimonial-subcon .item-con .item content {
+.page-body .project-con .testimonial-subcon .item-con .item blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+  transform: scale(0.9);
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item .author {
   display: flex;
   justify-content: space-between;
 }
 
-.page-body .project-con .testimonial-subcon .item-con .item p:last-child {
+.page-body .project-con .testimonial-subcon .item-con .item i:last-child {
   display: flex;
   justify-content: flex-end;
+  margin-top: -4rem;
+}
+
+.page-body .project-con .testimonial-subcon .item-con .item p:last-child {
+  text-transform: uppercase;
 }
 
 .page-body .design-con {
@@ -420,7 +394,6 @@ header nav {
   display: flex;
   justify-content: center;
   padding: 8rem 0;
-  gap: 10%;
 }
 
 .page-body .design-con .circle {
@@ -440,16 +413,30 @@ header nav {
   width: clamp(20rem, 65vw, 65rem);
   display: flex;
   align-items: center;
-  gap: 6%;
+  gap: 1rem;
 }
 
 .page-body .design-con .design-subcon img {
-  border-radius: 5%;
+  border-radius: 5rem;
   height: clamp(22rem, 30vw, 50rem);
 }
 
-.page-body .design-con .design-subcon h2 {
-  margin-left: -15%;
+.page-body .design-con .design-subcon .design-heading {
+  margin-left: -100px;
+  z-index: 1;
+}
+
+.page-body .design-con .design-subcon .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.page-body .design-con .text-con {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 footer {
@@ -532,6 +519,13 @@ footer p {
     margin: 0;
     margin-bottom: 4rem !important;
   }
+  .design-subcon {
+    flex-direction: column;
+  }
+  .design-subcon .design-heading {
+    margin-left: 0 !important;
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -539,21 +533,17 @@ footer p {
     flex-wrap: wrap;
     height: auto !important;
     padding: 6rem 2rem !important;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center !important;
   }
   .hero-subcon .hero-text-con {
-    width: 100% !important;
+    width: 90% !important;
   }
   .approach-con .contents p {
     margin-top: 0rem !important;
   }
   .approach-con h4 {
     font-size: 1.3rem;
-  }
-  .item-con .item {
-    flex: 1 1 100px;
-    align-items: center;
   }
   .category {
     flex: 1 1 calc(100%) !important;
@@ -565,4 +555,73 @@ footer p {
   height: 20px;
   min-width: 20px;
   border-radius: 50%;
+}
+
+.image-con {
+  display: flex;
+  align-items: flex-end;
+}
+
+.image-con .animate {
+  height: clamp(22rem, 30vw, 50rem);
+  animation: float 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%,
+100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.image-con .lg-date, .image-con .companyname {
+  font-size: clamp(3rem, 16vw, 14rem);
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #888888;
+  margin: 0 -100px -50px 0;
+  opacity: 0.1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.image-con .sm-date {
+  font-size: clamp(1rem, 0vw, 5rem);
+  font-weight: bold;
+  border: 5px solid #C5C5C5;
+  border-radius: 20px 0 0 0;
+  padding: 1rem;
+  margin: 0 0 -30px -100px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.image-con .solidbg {
+  background-color: #f1f1f1;
+  color: #111111;
+}
+
+.image-con .solidbg .circle {
+  border: solid 4px #111111;
+}
+
+.image-con .solidbg a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.image-con .solidbg a:hover {
+  color: yellow;
+}
+
+.image-con .companyname {
+  font-size: 1rem;
+  color: #111111;
+  opacity: 1;
+  margin: 0 1rem;
 }
