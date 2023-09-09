@@ -60,15 +60,8 @@ nav {
 header {
   background-color: #111111;
   color: #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-  border-radius: 0 0 40px 0;
-  padding: 2% 6% 2% 6%;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+  background: none;
+  width: 100%;
 }
 
 header .circle {
@@ -88,12 +81,51 @@ header a:active {
   font-weight: bold;
 }
 
-header nav {
+header .header-content {
+  width: 60%;
+  background-color: #111111;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 40px 0;
+  padding: 2% 6% 2% 6%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header .header-content .circle {
+  border: solid 4px #f1f1f1;
+}
+
+header .header-content a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+header .header-content a:hover {
+  color: yellow;
+}
+
+header .header-content a:active {
+  font-weight: bold;
+}
+
+header .header-content nav {
   width: 60%;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   margin-left: 1%;
+}
+
+header .header-content .menubar {
+  display: none;
+}
+
+header .dropdown-menu {
+  display: none;
 }
 
 .page-body {
@@ -498,6 +530,46 @@ footer p {
 }
 
 @media screen and (max-width: 1000px) {
+  header .menubar {
+    display: block !important;
+  }
+  header .menu {
+    display: none !important;
+  }
+  header .dropdown-menu {
+    height: 0;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #111111;
+    right: 0;
+    opacity: 0.97;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 999;
+    backdrop-filter: blur(50px);
+  }
+  header .dropdown-menu.open {
+    height: 300px;
+    width: 50%;
+  }
+  header .dropdown-menu i {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  header .dropdown-menu a {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  header .dropdown-menu a:first-child {
+    margin-top: 2rem;
+  }
+  header .dropdown-menu a:last-child {
+    margin-bottom: 2rem;
+  }
   .category {
     flex: 1 1 calc(90% / 2) !important;
   }
@@ -577,7 +649,8 @@ footer p {
   }
 }
 
-.image-con .lg-date, .image-con .companyname {
+.image-con .lg-date,
+.image-con .companyname {
   font-size: clamp(3rem, 16vw, 14rem);
   font-weight: bold;
   writing-mode: vertical-rl;

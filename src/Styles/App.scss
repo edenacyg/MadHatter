@@ -57,22 +57,36 @@ nav {
 
 header {
 	@include dark;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 60%;
-	border-radius: 0 0 40px 0;
-	padding: 2% 6% 2% 6%;
-	position: fixed;
-	top: 0;
-	z-index: 999;
+	background: none;
+	width: 100%;
 
-	nav {
+	.header-content {
 		width: 60%;
+		@include dark;
 		display: flex;
 		justify-content: space-between;
-		text-transform: uppercase;
-		margin-left: 1%
+		align-items: center;
+		border-radius: 0 0 40px 0;
+		padding: 2% 6% 2% 6%;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+
+		nav {
+			width: 60%;
+			display: flex;
+			justify-content: space-between;
+			text-transform: uppercase;
+			margin-left: 1%
+		}
+
+		.menubar {
+			display: none;
+		}
+	}
+
+	.dropdown-menu {
+		display: none;
 	}
 }
 
@@ -321,7 +335,7 @@ header {
 		.text-con {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;			
+			gap: 2rem;
 		}
 	}
 }
@@ -368,6 +382,58 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+
+	//Navbar
+	header {
+		.menubar {
+			display: block !important;
+		}
+
+		.menu {
+			display: none !important;
+		}
+
+		.dropdown-menu {
+			height: 0;
+			display: flex;
+			position: absolute;
+			flex-direction: column;
+			background-color: $black-color;
+			right: 0;
+			opacity: 0.97;
+			border-radius: $sm-radius;
+			overflow: hidden;
+			transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			z-index: 999;
+			backdrop-filter: blur(50px);
+
+			&.open {
+				height: 300px;
+				width: 50%;
+			}
+
+			i {
+				display: flex;
+				justify-content: flex-end;
+				padding: 1rem;
+			}
+
+			a {
+				padding: 0.5rem;
+				display: flex;
+				justify-content: center;
+
+				&:first-child {
+					margin-top: 2rem;
+				}
+
+				&:last-child {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+
 	.category {
 		flex: 1 1 calc(90% / 2) !important;
 	}
@@ -399,7 +465,7 @@ footer {
 			}
 		}
 	}
-	
+
 	.design-subcon {
 		flex-direction: column;
 
@@ -470,7 +536,8 @@ footer {
 		}
 	}
 
-	.lg-date, .companyname {
+	.lg-date,
+	.companyname {
 		font-size: clamp(3rem, 16vw, 14rem);
 		font-weight: bold;
 		writing-mode: vertical-rl;
