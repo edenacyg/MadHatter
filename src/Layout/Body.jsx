@@ -80,10 +80,10 @@ function Body() {
 					<h2><span className='styled'>Our</span> projects</h2>
 					<div className='project-items'>
 						<div className='item-con'>
-							<Project projdate="June 2022" title="Project - 001" />
-							<Project projdate="May 2022" title="Project - 002" />
-							<Project projdate="Sep 2022" title="Project - 003" />
-							<Project projdate="June 2022" title="Project - 004" />
+							<Project projdate="June 2023" title="Project - 001" />
+							<Project projdate="May 2023" title="Project - 002" />
+							<Project projdate="Sep 2023" title="Project - 003" />
+							<Project projdate="June 2023" title="Project - 004" />
 						</div>
 					</div>
 				</div>

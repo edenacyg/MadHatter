@@ -12,6 +12,7 @@ function Header() {
                 <a href="/">About</a>
                 <a href="/">Design</a>
                 <a href="/">Project</a>
+                <a href="/">Shop</a>
             </nav>
         </header>
     )
