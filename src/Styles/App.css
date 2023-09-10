@@ -87,7 +87,7 @@ header a:active {
 }
 
 header .header-content {
-  width: 60%;
+  width: 65%;
   background-color: #111111;
   color: #f1f1f1;
   display: flex;
@@ -256,7 +256,7 @@ header .dropdown-menu {
 }
 
 .page-body .approach-con .approach-subcon {
-  width: clamp(20rem, 60vw, 65rem);
+  width: clamp(22rem, 60vw, 65rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,7 +322,7 @@ header .dropdown-menu {
 }
 
 .page-body .project-con .project-subcon {
-  width: clamp(20rem, 60vw, 65rem);
+  width: clamp(22rem, 60vw, 65rem);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -366,7 +366,7 @@ header .dropdown-menu {
 }
 
 .page-body .project-con .testimonial-subcon {
-  width: clamp(20rem, 65vw, 65rem);
+  width: clamp(22rem, 65vw, 65rem);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -456,7 +456,7 @@ header .dropdown-menu {
 }
 
 .page-body .design-con .design-subcon {
-  width: clamp(20rem, 65vw, 65rem);
+  width: clamp(22rem, 65vw, 65rem);
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -644,7 +644,7 @@ footer p {
     font-size: 1.3rem;
   }
   .approach-con h3 {
-    white-space: wrap;
+    white-space: wrap !important;
   }
   footer .category {
     flex: 1 1 calc(100%) !important;
@@ -661,7 +661,7 @@ footer p {
 .image-con {
   display: flex;
   align-items: flex-end;
-  margin: 0 -50px 0 0;
+  margin: 0 -2rem 0 0;
 }
 
 .image-con .animate {
