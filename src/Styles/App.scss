@@ -16,12 +16,12 @@
 	}
 
 	h2 {
-		font-size: clamp(1.1rem, 2.5vw, 6rem);
+		font-size: clamp(3.1rem, 4.2vw, 11rem);
 		font-weight: 300;
 	}
 
 	h3 {
-		font-size: clamp(1rem, 2vw, 2.2rem);
+		font-size: clamp(2.1rem, 3vw, 2.2rem);
 		font-weight: 300;
 	}
 
@@ -448,6 +448,12 @@ footer {
 		flex-direction: column;
 	}
 
+	.approach-con {
+		h3 {
+			white-space: nowrap;
+		}
+	}
+	
 	.project-con {
 		gap: 5rem !important;
 

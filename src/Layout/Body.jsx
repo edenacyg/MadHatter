@@ -11,7 +11,7 @@ function Body() {
 					<div className='hero-text-con'>
 						<div>
 							<h1>The mad hatter</h1>
-							<h2>UI/UX design - 001</h2>
+							<h5>UI/UX design - 001</h5>
 						</div>
 
 						<div className='icons'>

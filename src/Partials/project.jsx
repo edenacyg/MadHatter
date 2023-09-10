@@ -6,7 +6,7 @@ function project({ title, projdate }) {
         <div className='item'>
             <MyImage date={projdate} bg="yes"/>
             <div className="project-title">
-                <h2>{ title }</h2>
+                <h3>{ title }</h3>
                 <div className='icons'>
                     <Circle />
                     <Circle />
