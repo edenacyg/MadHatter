@@ -6,15 +6,15 @@ function testimonial() {
         <div className='item'>
             <i class="fas fa-quote-left"></i>
             <blockquote>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Quality digital products and platforms require in-depth study and research. With these, the company realizes innovative and appropriate application of project solutions to produce outstanding outputs that  the achieve the</p>
                 <div className='author'>
                     <div className='icons'>
                         <Circle />
                         <Circle />
                     </div>
                     <div className='texts'>
-                        <h6>-Author</h6>
-                        <p>Company.Co</p>
+                        <h6>-Rica nypps</h6>
+                        <p>&nbsp;&nbsp;Company Co.</p>
                     </div>
                 </div>
             </blockquote>

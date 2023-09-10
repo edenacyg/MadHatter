@@ -10,8 +10,8 @@ function Body() {
 				<div className='hero-subcon'>
 					<div className='hero-text-con'>
 						<div>
-							<h1>The mad hatter</h1>
-							<h5>UI/UX design - 001</h5>
+							<h1>The mad hatter*</h1>
+							<h5>UI/UX design — 001</h5>
 						</div>
 
 						<div className='icons'>
@@ -21,7 +21,7 @@ function Body() {
 						<p className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 
-					<MyImage verticaltext="2023" date="June 2022" animate="yes" />
+					<MyImage image="./images/hero-image.png" verticaltext="2023" date="June 2022" animate="yes" />
 				</div>
 
 			</div>
@@ -55,7 +55,7 @@ function Body() {
 								<Circle />
 								<Circle />
 							</div>
-							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>The focus is in creating clear, user friendly, and aesthetically pleasing. It is given importance to come up with a simple and clear flow of design for the users. The Mad Hatter* - creating intentional and creative digital solutions for the future.</p>
 						</div>
 
 						<div className='digital-content'>
@@ -64,7 +64,7 @@ function Body() {
 								<Circle />
 								<Circle />
 							</div>
-							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>The focus is in creating clear, user friendly, and aesthetically pleasing. It is given importance to come up with a simple and clear flow of design for the users. The Mad Hatter* - creating intentional and creative digital solutions for the future.</p>
 						</div>
 					</div>
 
@@ -80,10 +80,10 @@ function Body() {
 					<h2><span className='styled'>Our</span> projects</h2>
 					<div className='project-items'>
 						<div className='item-con'>
-							<Project projdate="June 2023" title="Project - 001" />
-							<Project projdate="May 2023" title="Project - 002" />
-							<Project projdate="Sep 2023" title="Project - 003" />
-							<Project projdate="June 2023" title="Project - 004" />
+							<Project imageUrl="./images/project001.png" projdate="June 2023" title="Project - 001" />
+							<Project imageUrl="./images/project002.png" projdate="May 2023" title="Project - 002" />
+							<Project imageUrl="./images/project003.png" projdate="Sep 2023" title="Project - 003" />
+							<Project imageUrl="./images/project004.png" projdate="June 2023" title="Project - 004" />
 						</div>
 					</div>
 				</div>
@@ -106,14 +106,15 @@ function Body() {
 
 			<div className="design-con">
 				<div className="design-subcon">
-					<MyImage companyname="The mad hatter" date="JUNE 2023" animate="yes" />
+					<MyImage image="./images/designing.png" companyname="The mad hatter" date="JUNE 2023" animate="yes" />
 					<div className="text-con">
 						<div className="design-heading">
-							<h2><span className='styled'>Designing for</span><br /> the future</h2>
+							<h2 className='styled'>Designing for</h2>
+							<h5>the future</h5>
 						</div>
 
 						<div className="description">
-							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>The focus is in creating excellent digital solutions that are clear, user friendly, and aesthetically pleasing.  The company gives importance to come up with simple and clear flows and systems of design for all users.</p>
 
 							<div className='icons'>
 								<Circle />

@@ -10,8 +10,9 @@ function Header() {
     return (
         <header>
             <div className="header-content">
-                <div className='logo-container'>
-                    <h6>The mad hatter</h6>
+                <div className='logo-con'>
+                    <i class="fas fa-signature"></i>
+                    <h6>The mad hatter*</h6>
                 </div>
 
                 <nav className='menu'>

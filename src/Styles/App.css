@@ -16,7 +16,7 @@
 }
 
 .App h1 {
-  font-size: clamp(2.3rem, 3vw, 10rem);
+  font-size: clamp(2.3rem, 2.9vw, 10rem);
 }
 
 .App h2 {
@@ -32,6 +32,11 @@
 .App h4 {
   font-size: clamp(1.8rem, 3.5vw, 10rem);
   text-transform: initial;
+}
+
+.App h5 {
+  font-size: clamp(1.1rem, 2.5vw, 6rem);
+  font-weight: lighter;
 }
 
 .App h6 {
@@ -110,6 +115,14 @@ header .header-content a:hover {
 
 header .header-content a:active {
   font-weight: bold;
+}
+
+header .header-content .logo-con {
+  display: flex;
+}
+
+header .header-content .logo-con i {
+  transform: rotate(280deg);
 }
 
 header .header-content nav {
@@ -333,6 +346,7 @@ header .dropdown-menu {
   flex-direction: column;
   gap: 1rem;
   flex: 1 1 calc(288px - 10px);
+  padding: 2rem;
 }
 
 .page-body .project-con .project-subcon .item-con .item img {
@@ -412,6 +426,7 @@ header .dropdown-menu {
 
 .page-body .project-con .testimonial-subcon .item-con .item p:last-child {
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .page-body .design-con {
@@ -444,16 +459,15 @@ header .dropdown-menu {
   width: clamp(20rem, 65vw, 65rem);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .page-body .design-con .design-subcon img {
-  border-radius: 5rem;
   height: clamp(22rem, 30vw, 50rem);
 }
 
 .page-body .design-con .design-subcon .design-heading {
-  margin-left: -100px;
+  margin-left: -4rem;
   z-index: 1;
 }
 
@@ -468,6 +482,10 @@ header .dropdown-menu {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.page-body .design-con .text-con h5 {
+  font-size: clamp(3.1rem, 5.3vw, 11rem);
 }
 
 footer {
@@ -527,6 +545,7 @@ footer .category a {
 footer p {
   margin-top: 2rem;
   text-align: center;
+  font-style: italic;
 }
 
 @media screen and (max-width: 1000px) {
@@ -570,12 +589,6 @@ footer p {
   header .dropdown-menu a:last-child {
     margin-bottom: 2rem;
   }
-  .category {
-    flex: 1 1 calc(90% / 2) !important;
-  }
-  .item-con .item {
-    flex: 1 1 235px;
-  }
   .about-text {
     flex-direction: column;
   }
@@ -591,14 +604,25 @@ footer p {
   }
   .project-con .project-subcon .item-con .item {
     margin: 0;
-    margin-bottom: 4rem !important;
   }
   .design-subcon {
     flex-direction: column;
   }
-  .design-subcon .design-heading {
+  .design-subcon .text-con {
+    align-items: center !important;
+    text-align: center;
+  }
+  .design-subcon .text-con .design-heading {
     margin-left: 0 !important;
     margin-top: 3rem;
+  }
+  footer .category {
+    flex: 1 1 calc(90% / 2) !important;
+    text-align: center;
+    align-content: center;
+  }
+  footer .category a {
+    justify-content: center;
   }
 }
 
@@ -619,7 +643,10 @@ footer p {
   .approach-con h4 {
     font-size: 1.3rem;
   }
-  .category {
+  .approach-con h3 {
+    white-space: wrap;
+  }
+  footer .category {
     flex: 1 1 calc(100%) !important;
     align-items: center;
   }
@@ -634,6 +661,7 @@ footer p {
 .image-con {
   display: flex;
   align-items: flex-end;
+  margin: 0 -50px 0 0;
 }
 
 .image-con .animate {

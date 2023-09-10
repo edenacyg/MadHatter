@@ -1,42 +1,46 @@
 import React from 'react';
+import Menu from '../Partials/menu';
 
 function Footer() {
     return (
         <footer>
             <div className="footer-con">
                 <div className="categories">
-                    <div className='category'>
-                        <h6>The Company</h6>
-                        <nav>
-                            <a href="#">New Designs</a>
-                            <a href="#">Weekly Insights</a>
-                            <a href="#">Collaborations</a>
-                        </nav>
-                    </div>
-                    <div className='category'>
-                        <h6>The Company</h6>
-                        <nav>
-                            <a href="#">New Designs</a>
-                            <a href="#">Weekly Insights</a>
-                            <a href="#">Collaborations</a>
-                        </nav>
-                    </div>
-                    <div className='category'>
-                        <h6>The Company</h6>
-                        <nav>
-                            <a href="#">New Designs</a>
-                            <a href="#">Weekly Insights</a>
-                            <a href="#">Collaborations</a>
-                        </nav>
-                    </div>
-                    <div className='category'>
-                        <h6>The Company</h6>
-                        <nav>
-                            <a href="#">New Designs</a>
-                            <a href="#">Weekly Insights</a>
-                            <a href="#">Collaborations</a>
-                        </nav>
-                    </div>
+                    <Menu
+                        title="The Company"
+                        menus={[
+                            { label: "New Designs" },
+                            { label: "Weekly Insights" },
+                            { label: "Collaborations" },
+                        ]}
+                    />
+
+                    <Menu
+                        title="The Team"
+                        menus={[
+                            { label: "Meet the Team" },
+                            { label: "Our Designers" },
+                            { label: "The Principles" },
+                        ]}
+                    />
+
+                    <Menu
+                        title="Our Design"
+                        menus={[
+                            { label: "Intentional Research" },
+                            { label: "Digital Solutions" },
+                            { label: "Innovations" },
+                        ]}
+                    />
+
+                    <Menu
+                        title="Legal"
+                        menus={[
+                            { label: "Terms and Confitions" },
+                            { label: "Privacy Policy" },
+                            { label: "Copyright" },
+                        ]}
+                    />
                 </div>
                 <div>
                     <p>Copyright 2021 Fashion with Ethics All RIghts Reserved.</p>
