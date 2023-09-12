@@ -2,10 +2,10 @@
 
 //Texts
 $font: "Roboto", sans-serif;
+$xl-font: 60px;
 $large-font: 80px;
 $med-font: 60px;
 $sm-font: 45px;
-$xl-font: 60px;
 
 @mixin heading {
     font-weight: 700;
