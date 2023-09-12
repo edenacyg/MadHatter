@@ -134,12 +134,13 @@ header {
 	}
 
 	.about-con {
+		@include dark;
 		background-image: url('../../public/images/bg-shape.png');
 		display: flex;
 		justify-content: center;
 		background-position: top;
 		background-repeat: no-repeat;
-		padding: 10rem 0;
+		padding: 10rem 2rem;
 		width: 100%;
 
 		.about-subcon {
@@ -168,7 +169,7 @@ header {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		padding: 10rem 0;
+		padding: 10rem 2rem;
 
 		.approach-subcon {
 			width: clamp(22rem, 60vw, 65rem);
@@ -215,7 +216,7 @@ header {
 		align-items: center;
 		flex-direction: column;
 		gap: 12rem;
-		padding: 10rem 0;
+		padding: 10rem 2rem;
 
 		.project-subcon {
 			width: clamp(22rem, 60vw, 65rem);
@@ -244,7 +245,7 @@ header {
 
 					img {
 						width: 100%;
-						max-width: 100%;
+						max-width: 90%;
 						height: auto;
 					}
 
@@ -363,33 +364,38 @@ footer {
 	display: flex;
 	justify-content: center;
 	padding: 3rem;
-	width: 100%;
 
 	.footer-con {
-		width: 70%;
-	}
-
-	.categories {
+		width: 100%;
 		display: flex;
-		justify-content: space-between;
-		min-width: 100px;
-		flex-wrap: wrap;
-		gap: 2%;
-	}
-
-	.category {
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		flex-wrap: wrap;
-		margin-bottom: 2rem;
-
-		h6 {
-			margin-bottom: 1rem;
+		justify-content: center;
+		
+		.footer-subcon {
+			width: clamp(27rem, 65vw, 65rem);
 		}
 
-		a {
+		.categories {
 			display: flex;
+			justify-content: space-between;
+			min-width: 100px;
+			flex-wrap: wrap;
+			gap: 2%;
+		}
+	
+		.category {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 2rem;
+	
+			h6 {
+				margin-bottom: 1rem;
+			}
+	
+			a {
+				display: flex;
+			}
 		}
 	}
 
@@ -509,12 +515,17 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+	.header-content {
+		width: 100% !important;
+	}
+
 	.hero-subcon {
 		flex-wrap: wrap;
 		height: auto !important;
 		padding: 6rem 2rem !important;
 		gap: 4rem;
 		justify-content: center !important;
+		margin: 0 !important;
 
 		.hero-text-con {
 			width: 90% !important;
@@ -543,6 +554,25 @@ footer {
 			align-items: center;
 		}
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.project-con {
+		.image-con {
+			position: relative;
+			.sm-date {
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+
+	.about-con {
+		.about-subcon {
+			width: clamp(20rem, 40vw, 36rem);
+		}
+	}
+	
 }
 
 //Components
