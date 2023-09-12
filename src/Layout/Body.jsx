@@ -50,7 +50,7 @@ function Body() {
 
 					<div className='contents'>
 						<div className='intentional-content'>
-							<h3><span className='styled'>001</span><br />International research</h3>
+							<h3><span className='styled'>001</span><br />International <br /> research</h3>
 							<div className='icons'>
 								<Circle />
 								<Circle />

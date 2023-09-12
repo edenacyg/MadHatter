@@ -548,6 +548,16 @@ footer {
 		}
 	}
 
+	.project-con {
+		.project-subcon {
+			gap: 2rem !important;
+		}
+		.project-title {
+			flex-direction: column;
+    		gap: 1rem;
+		}
+	}
+
 	footer {
 		.category {
 			flex: 1 1 calc(100%) !important;
