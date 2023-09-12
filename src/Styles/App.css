@@ -20,7 +20,7 @@
 }
 
 .App h2 {
-  font-size: clamp(3.1rem, 4.2vw, 11rem);
+  font-size: clamp(2.8rem, 4.2vw, 11rem);
   font-weight: 300;
 }
 
@@ -62,6 +62,10 @@ nav {
   text-align: justify;
 }
 
+a {
+  text-transform: uppercase;
+}
+
 header {
   background-color: #111111;
   color: #f1f1f1;
@@ -94,7 +98,7 @@ header .header-content {
   justify-content: space-between;
   align-items: center;
   border-radius: 0 0 40px 0;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -129,7 +133,6 @@ header .header-content nav {
   width: 60%;
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
   margin-left: 1%;
 }
 
@@ -585,7 +588,7 @@ footer p {
     position: absolute;
     flex-direction: column;
     background-color: #111111;
-    right: 0;
+    right: -10px;
     opacity: 0.97;
     border-radius: 10px;
     overflow: hidden;
@@ -603,7 +606,7 @@ footer p {
     font-size: 25px;
   }
   header .dropdown-menu a {
-    padding: 0.5rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -658,7 +661,7 @@ footer p {
   .hero-subcon {
     flex-wrap: wrap;
     height: auto !important;
-    padding: 6rem 2rem !important;
+    padding: 8rem 2rem 6rem 2rem !important;
     gap: 4rem;
     justify-content: center !important;
     margin: 0 !important;
@@ -731,12 +734,12 @@ footer p {
 
 .image-con .lg-date,
 .image-con .companyname {
-  font-size: clamp(3rem, 16vw, 14rem);
+  font-size: clamp(7rem, 16vw, 14rem);
   font-weight: bold;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: #888888;
-  margin: 0 -100px -50px 0;
+  margin: 0 -90px -50px -20px;
   opacity: 0.1;
   z-index: 1;
   text-transform: uppercase;
